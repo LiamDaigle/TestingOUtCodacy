@@ -11,8 +11,13 @@ on:
 
 permissions:
   contents: read
-
+  
+env:
+    global:
+      CODACY_PROJECT_TOKEN= ${{ secrets.CODACY_PROJECT_TOKEN }}
+      
 jobs:
+  
   build:
 
     runs-on: ubuntu-latest
